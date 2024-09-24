@@ -2,9 +2,41 @@ Lesley Vazquez
 Ben Hightower
 Nick Lankau
 
-find_errors
-1. <head> on line 7 
+Find_errors
+1.Line 1 missing !DOCTYPE in between carrots before html
+2. Line 4 should say lang= “en” not language=”en”
+3. </head> on line 7 
+4. Line 9 is missing </h1> at the end
+5. Line 11 missing <p> at beginning
+6. Line 13 needs to be <ul> not <ol>
+7. Line 19 has </li> When its supposed to be <li> no slash
+8. Line 26 missing </p> at the end
+9. Line 28 should be image.jpg not Image.png
+10. Line 30 should end with </a> not </img>
+11. Line 39 is missing a slash and should be td not tr = </td>not <tr
+12. Line 45 missing </table>
+13. Line 46 src instead of source
+14. Line 46 “error.jpg” not “error.jpeg”
+15. Line 48 should have <p> instead of 50 
+16. Line 52 should be <button type =”button”> Click me</button> not <input type ="button" value="Click me">
+17. Line 54 has to have —> at the end
+18. Line 58 <p> should go after <em> 
+19. Line 64 should end with <h2> not <h3>
 
 
 find_errors_2
-1.
+26. No closing </head> statement after line 2
+27. <h1> is not inside the encompassing <body> on line 4
+28. No closing carrot on <body on line 5
+29. <html> is not after doctype on line 2, instead on line 6
+30. <html> statement also does not have a “lang” attribute associated with it on line 6
+31. No closing </div> after implementation on line 7
+32. Missing closing </strong> statement after introduced on line 8
+33. Referenced an image inside a paragraph statement on line 10
+34. Image file name is missing an underscore between “image” and “2” on line 10
+35. Image also does not have an alt attribute on line 10
+36. Image does not have a source on it, instead has href which is for links on line 10
+37. Header is missing opening “<h2>” on line 12
+38. Header is also referenced within a paragraph statement on line 12
+39. Comment is missing “!--” at the beginning, and “--” at the end of the comment on line 15
+40. Closing </html> statement is literally missing the “l” on line 16
