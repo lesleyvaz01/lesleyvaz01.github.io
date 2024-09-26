@@ -54,3 +54,6 @@ body {
 h2, p{
     margin: 0;
 }
+h2{
+    font-size: 10em;
+}
