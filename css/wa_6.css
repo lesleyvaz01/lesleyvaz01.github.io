@@ -1,0 +1,38 @@
+h1 {
+    font-size:20px;
+    font-family: 'Lucida Handwriting';
+    color: #ffdddd;
+}
+p {
+    font-size: 30px;
+    color: whitesmoke;
+    font-family: 'Lucida Handwriting';
+
+}
+
+img{
+    width:500px;
+    
+    margin-right:27em;
+}
+
+#Image{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/img_shay.jpeg);
+    background-position: center center, center top, center bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:fixed;
+}
+text p{
+    
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    margin: auto;
+    text-align: center;
+    margin-top: 15em;
+    margin-left: 27em;
+
+  }
