@@ -1,0 +1,109 @@
+
+body {
+    font-family: helvetica, sans-serif;
+    width: 350px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  div {
+    padding-bottom: 20px;
+  }
+
+  input[type="text"] {
+    padding: 5px;
+    width: 150px;
+  }
+
+  p {
+    background: #ffc125;
+    color: #5e2612;
+    padding: 10px;
+    visibility: hidden;
+  }.header {
+    color: #1D0F14;
+    background-color: #DCCFBF;
+    text-align: center;
+    padding: 20px;
+    font-family: "DM Serif Display", serif;
+}
+
+body {
+    color: #C3AB77;
+    background-color: #1D0F14;
+    font-family: "Quattrocento Sans", serif;
+    margin: 0;
+    padding: 20px;
+    font-size: larger;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 60pt;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.contact-info,
+.box-hours,
+.holiday-closures,
+.admin-info,
+.donors-sponsors,
+.admin-address {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-size: 25px;
+
+}
+
+a {
+    color: #691221;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+.mission{
+    font-size: 40pt;
+}
+
+@media screen and (max-width: 400px){
+    ul{
+         flex-direction: column;
+     }
+     li{
+         width: 100vs;
+         padding: 10px 30px;
+     }
+     .grid {
+        grid-template-columns: 1fr;
+     }
+ }
