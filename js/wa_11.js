@@ -2,25 +2,25 @@
 //const petPhotos = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
 //const altText = pic.one(pic1.jpg); pic.two(pic2.jpg);pic.three(pic3.jpg);pic.four(pic4.jpg);pic.five(pic5.jpg);
 
-const displayedImage =document.querySelector('displayed.img');
+const displayedImage =document.querySelector('.displayed-img');
 const  thumBar = document.querySelector('.thumb-bar');
 
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
-const petPhotos = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
+const petPhotos = ['blue.jpeg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpeg'];
 
 const alts = {
-    'pic1.jpg' : "descirption",
+    'blue.jpeg' : "description",
     'pic2.jpg' : "descirption",
     'pic3.jpg' : "descirption",
     'pic4.jpg' : "descirption",
-    'pic5.jpg' : "descirption"
+    'pic5.jpg' : "Photo of cat Nur Nur"
 }
 
 for (let i=0; i<petPhotos.length; i++){
     const newImage = document.createElement('img');
-newImage.setAttribute('src', 'img/'+ petPhotos[i]);
+newImage.setAttribute('src', '../img/'+ petPhotos[i]);
 newImage.setAttribute('alt', alts[i]);
 thumBar.appendChild(newImage);
 newImage.addEventListener('click', e => {
