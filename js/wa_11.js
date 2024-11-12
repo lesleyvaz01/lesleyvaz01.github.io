@@ -1,54 +1,50 @@
+const petPhotos = ['blue1.jpeg', 'pic2.jpeg', 'pic3.jpeg', 'pic4.jpeg', 'pic5.jpeg'];
 
-//const petPhotos = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
-//const altText = pic.one(pic1.jpg); pic.two(pic2.jpg);pic.three(pic3.jpg);pic.four(pic4.jpg);pic.five(pic5.jpg);
 
-const displayedImage =document.querySelector('.displayed-img');
-const  thumBar = document.querySelector('.thumb-bar');
+const alts = {
+    'blue1.jpeg': "Photo of Blue the Boston Terrier",
+    'pic2.jpeg': "Photo of Alex the Boston Terrier",
+    'pic3.jpeg': "Another Photo of Alex the Boston Terrier sleeping",
+    'pic4.jpeg': "Ginger the Persian cat looking at comics",
+    'pic5.jpeg': "Photo of cat Nur Nur frightened"
+};
 
+
+const displayedImage = document.querySelector('.displayed-img');
+const thumbBar = document.querySelector('.thumb-bar');
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
-const petPhotos = ['blue.jpeg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpeg'];
 
-const alts = {
-    'blue.jpeg' : "description",
-    'pic2.jpg' : "descirption",
-    'pic3.jpg' : "descirption",
-    'pic4.jpg' : "descirption",
-    'pic5.jpg' : "Photo of cat Nur Nur"
-}
-
-for (let i=0; i<petPhotos.length; i++){
+petPhotos.forEach(photo => {
     const newImage = document.createElement('img');
-newImage.setAttribute('src', '../img/'+ petPhotos[i]);
-newImage.setAttribute('alt', alts[i]);
-thumBar.appendChild(newImage);
-newImage.addEventListener('click', e => {
-    displayedImage.src = e.target.src;
-    displayedImage.alt = e.target.alt;
+    newImage.setAttribute('src', '../img/' + photo);
+    newImage.setAttribute('alt', alts[photo]);
+    thumbBar.appendChild(newImage);
 
+   
+    newImage.addEventListener('click', function () {
+        displayedImage.src = newImage.src;  
+        displayedImage.alt = newImage.alt;  
+    });
 });
-}
 
-//btn.setAttribute("class", xxx);
-//btn.textContent = xxx;
-//overlay.style.backgroundColor = xxx;
 
-btn.addEventListener('click', () => {
-    const btnClass = btn.getAttribute('class');
-    if( btnClass ==='dark'){
-        btn.setAttribute('class','light');
+btn.addEventListener('click', function () {
+    if (btn.classList.contains('dark')) {
+        
+        btn.classList.remove('dark');
+        btn.classList.add('light');
         btn.textContent = 'Lighten';
-        overlay.style.backgroundColor = "rgb(0 0 0 / 50%)";
-    }
-    else{
-        btn.setAttribute('class','dark');
+        overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";  
+    } else {
+        
+        btn.classList.remove('light');
+        btn.classList.add('dark');
         btn.textContent = 'Darken';
-        overlay.style.backgroundColor = "rgb(0 0 0 0)";
+        overlay.style.backgroundColor = "rgba(0, 0, 0, 0)"; 
     }
 });
-
-
 
 
  // objects 
