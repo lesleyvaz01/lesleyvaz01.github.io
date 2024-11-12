@@ -78,3 +78,15 @@ button {
 button.light {
     background-color: rgba(150, 150, 150, 0.8);
 }
+@media screen and (max-width: 400px){
+    ul{
+         flex-direction: column;
+     }
+     li{
+         width: 100vs;
+         padding: 10px 30px;
+     }
+     .grid {
+        grid-template-columns: 1fr;
+     }
+  }
