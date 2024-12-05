@@ -1,0 +1,66 @@
+nav{
+    font-family: "Averia Serif Libre", serif;
+  }
+  h1,p,h2 {
+    color: #6F5E53 - UMBER;
+    background-color: #F7EDF0;
+    margin:0;
+  }
+  
+  .header {
+    color: #691221;
+    background-color: #F7EDF0;
+    text-align: center;
+    padding: 20px;
+    font-family: "DM Serif Display", serif;
+    max-width: 100%; 
+    position: relative; 
+  }
+  
+  .container {
+    
+    max-width: 800px;
+    margin: 40px auto; 
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic !important;
+    font-size: 45pt;
+    margin-bottom: 20px;
+
+  }
+  
+  h2, h3, h4 {
+    font-family: "Averia Serif Libre";
+    font-weight: 400;
+    font-size: 2em;
+    margin-top: 15px;
+    
+  }
+  
+  p {
+    font-family: "Quattrocento Sans", serif;
+    line-height: 1.5;
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 400px){
+    ul{
+         flex-direction: column;
+     }
+     li{
+         width: 100vs;
+         padding: 10px 30px;
+     }
+     .grid {
+        grid-template-columns: 1fr;
+     }
+  }
