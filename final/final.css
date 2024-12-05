@@ -1,3 +1,7 @@
+body{
+    color: #6F5E53;
+    background-color: #F7EDF0;
+}
 ul{
     list-style: none;   
     display:flex;
