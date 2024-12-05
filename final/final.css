@@ -19,8 +19,8 @@ li a{
 }
 
 li a:hover{
-    background-color: darkslategrey;
-    color:#ADB87A;
+    color: darkslategrey;
+    background-color:#ADB87A;
 }
 
 li a:active{
@@ -31,13 +31,13 @@ nav{
     font-family: "Averia Serif Libre", serif;
   }
   h1,p,h2 {
-    color: #6F5E53 - UMBER;
+    color: #6F5E53;
     background-color: #F7EDF0;
     margin:0;
   }
   
   .header {
-    color: #691221;
+    color: #6F5E53;;
     background-color: #F7EDF0;
     text-align: center;
     padding: 20px;
