@@ -1,4 +1,5 @@
 body{
+    margin:0;
     color: #6F5E53;
     background-color: #F7EDF0;
 }
@@ -41,8 +42,8 @@ nav{
   }
   
   .header {
-    color: #6F5E53;;
-    background-color: #F7EDF0;
+    color: #6F5E53;
+    background-color: #F4CBC6;
     text-align: center;
     padding: 20px;
     font-family: "DM Serif Display", serif;
