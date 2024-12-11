@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*background*/
+body {
+    font-family: 'Quattrocento Sans', sans-serif;
+    background-color: #351D1C;
+    color: #F3F6F4;
+    line-height: 1.6;
+}
+
+/* this is the nav bar up at the top */
+nav {
+    background-color: #351D1C;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #F3F6F4;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FBefed;
+    transform: scale(1.1);
+}
+
+/* this is for the little filters */
+.filters {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.filters .filter {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #92374D;
+    color: #F3f6f4;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.filters .filter:hover {
+    background-color: #F3f6f4;
+    color: #92374D;
+}
+
+
+#portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 30px;
+}
+
+/* these are the project tiles */
+.tile {
+    background-color: #F3F6F4;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.tile:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.description {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.description h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #351D1C;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 15px;
+}
+
+.description .subtitle {
+    font-size: 20px;
+    color: #92374D;
+    margin-top: 5px;
+    font-family: 'Lucida Sans';
+}
+
+.description p {
+    font-size: 16px;
+    color: #6D6D6D;
+    line-height: 1.7;
+    margin-top: 15px;
+    font-family: 'Lucida Sans';
+}
+
+/* to get the carousel functioning */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.carousel-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* fixing the images */
+.projimg img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 3px solid #92374D;
+}
+
+
+@media (max-width: 1200px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #portfolio {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    #portfolio {
+        grid-template-columns: 1fr;
+    }
+}

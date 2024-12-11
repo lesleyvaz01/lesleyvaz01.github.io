@@ -1,100 +1,151 @@
-body{
-    margin:0;
-    color: #6F5E53;
-    background-color: #F7EDF0;
-}
-ul{
-    list-style: none;   
-    display:flex;
-    background-color: #6F5E53;
-    margin: 0;
-    padding: 10px 0px;
-    font-family: "Averia Serif Libre", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 12pt;
-    color: #F4AFAB;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-li a{
-    text-decoration: none; 
-    padding: 10px 30px;
-    color: white;
-    transition: color 1s;
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+  background-color: #fdefed; /* Soft background */
+  color: #351d1c; /* Dark brown for readability */
+  line-height: 1.6;
 }
 
-li a:hover{
-    color: #F4AFAB ;
-    background-color:#ADB87A;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-li a:active{
-    background-color: white;
-    color: black;
+/* Navigation Bar */
+nav {
+  background-color: #351d1c; 
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-nav{
-    font-family: "Averia Serif Libre", serif;
-  }
-  h1,p,h2 {
-    color: #6F5E53;
-    background-color: #F7EDF0;
-    margin:0;
-  }
-  
-  .header {
-    color: #6F5E53;
-    background-color: #F4CBC6;
-    text-align: center;
-    padding: 20px;
-    font-family: "DM Serif Display", serif;
-    max-width: 100%; 
-    position: relative; 
-  }
-  
-  .container {
-    
-    max-width: 800px;
-    margin: 40px auto; 
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: italic !important;
-    font-size: 45pt;
-    margin-bottom: 20px;
 
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  font-family: 'Anton', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fdefed; /* Light text for contrast */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fbefed;
+  transform: scale(1.1);
+}
+
+/* Landing Section */
+#landing {
+  text-align: center;/* position*/
+  padding: 80px 20px;/* position*/
+  background-color: #fbefed; 
+}
+
+#landing p {
+  font-size: 1.5rem;
+  color: #92374d; 
+  margin-bottom: 10px;
+}
+
+#landing h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 70px;
+  color: #92374d;
+  margin-bottom: 10px;
+  letter-spacing: -2px;
+}
+
+#landing h2 {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #351d1c;
+}
+
+/* Container for Projects/Content */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Tiles (if you want to display projects) */
+.tile {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.tile:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.tile img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 5px solid #351d1c;
+}
+
+.tile .description {
+  padding: 20px;
+  text-align: center;
+}
+
+.tile .description h2 {
+  font-size: 1.6rem;
+  color: #351d1c;
+}
+
+.tile .description p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      gap: 15px;
   }
-  
-  h2, h3, h4 {
-    font-family: "Averia Serif Libre";
-    font-weight: 400;
-    font-size: 2em;
-    margin-top: 15px;
-    
+
+  #landing h1 {
+      font-size: 50px;
   }
-  
-  p {
-    font-family: "Quattrocento Sans", serif;
-    line-height: 1.5;
+
+  #landing h2 {
+      font-size: 1.2rem;
   }
-  
-  
-  
-  
-  @media screen and (max-width: 400px){
-    ul{
-         flex-direction: column;
-     }
-     li{
-         width: 100vs;
-         padding: 10px 30px;
-     }
-     .grid {
-        grid-template-columns: 1fr;
-     }
+
+  .tile {
+      margin: 15px 0;
   }
+}
+
+@media (max-width: 480px) {
+  #landing h1 {
+      font-size: 40px;
+  }
+
+  .tile {
+      margin: 10px 0;
+  }
+}
+  

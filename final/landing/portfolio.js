@@ -1,19 +1,31 @@
-fetch('../wa/portfolio.json')
-.then(response=> {
-    return response.json();
-}).then(projects => {
-    console.log(projects);
-    parseData(projects);
-}).catch(err=>{
-    console.log(`error ${err}`);
-})
+
+  const themeToggleButton = document.getElementById('theme-toggle');
+const body = document.body;
+
+themeToggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    themeToggleButton.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
+});
 
 
-function parseData(data){
-    for(let i=0; i<data.projects.length; i++){
-    document.getElementById("projects").innerHTML += `<div class="row project" id="${data.projects[i].subdomain}">
-        <div class="projimg"><img src= "img/portfolio/portfolio (${i +1}).png></div>
-        <div class= "description"><h2>${data.projects[i].name}</h2><p class="subtitle">${data.projects[i].subtitle}</p>
-        <p${data.projects[i].abstract}></p></div></div>`
-     }
-}
+const links = document.querySelectorAll('nav a');
+links.forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        window.scrollTo({
+            top: targetElement.offsetTop - 50, // 50px offset for header
+            behavior: 'smooth',
+        });
+    });
+});
+
+
+
+
+
+
+
+
+  

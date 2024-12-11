@@ -1,3 +1,47 @@
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me!</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../final.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../landing/portfolio.html">Hey welcome</a></li>
+            <li><a href="../about/about.html">Get to know me!</a></li>
+            <li><a href="../projects/projects.html">Projects xD</a></li>
+            <li><a href="../contact/contact.html">Talk to me!!</a></li>
+            
+        </ul>
+    </nav>
+    <!/--div class="header">Lesley Vazquez</div
+
+  
+    
+             <!/-- Fill ou contact section -
+             <section id="contact" class="slide-in">
+                <h1>Contact Me</h1>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+    </div>
+    
+    <script src="contact.js"></script>
+</body>
+</html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,15 +62,17 @@
             
         </ul>
     </nav>
-    <div class="header">Lesley's Portfolio</div>
-    
-    <h1>Contact Me</h1>
-    <div class= "grid">
-        <div class="contact-info"></div>
-        <h2>Email</h2>
-        <p>leva8051@colorado.edu</p>
-
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="form-message" class="message"></div>
     </div>
-    
+
+    <script src="contact.js"></script> 
 </body>
 </html>

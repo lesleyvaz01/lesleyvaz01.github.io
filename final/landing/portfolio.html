@@ -1,58 +1,39 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesley Vazquez</title>
+    <title>Lesley Vazquez | Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="../final.css">
-
+    <!--link rel="stylesheet" href="../final.css"--S>
+    
+    <!-- Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Quattrocento+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="../landing/portfolio.html">Hey welcome</a></li>
             <li><a href="../about/about.html">Get to know me</a></li>
             <li><a href="../projects/projects.html">Projects</a></li>
-            <li><a href="../contact/contact.html">Contact</a></li>
-            
+            <li><a href="../contact/contact.html">Talk to me</a></li>
         </ul>
     </nav>
-    <div class="header">Lesley's Portfolio</div>
-    <section id="about">
-        <h1> About Me</h1>
-        <p> hey read more about me</p>
+
+    <!-- Landing Section -->
+    <section id="landing">
+        <p>hello, world I'm</p>
+        <h1>Lesley Vazquez</h1>
+        <h2>UI/UX and Web Design</h2>
     </section>
 
-    <section id="projects">
-        <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-            <button class="btn" onclick="filterSelection('animals')"> Animals</button>
-            <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-            <button class="btn" onclick="filterSelection('colors')"> Colors</button>
-          </div>
-          
-          <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-          <div class="container">
-            <div class="filterDiv cars">BMW</div>
-            <div class="filterDiv colors fruits">Orange</div>
-            <div class="filterDiv cars">Volvo</div>
-            <div class="filterDiv colors">Red</div>
-            <div class="filterDiv cars">Ford</div>
-            <div class="filterDiv colors">Blue</div>
-            <div class="filterDiv animals">Cat</div>
-            <div class="filterDiv animals">Dog</div>
-            <div class="filterDiv fruits">Melon</div>
-            <div class="filterDiv fruits animals">Kiwi</div>
-            <div class="filterDiv fruits">Banana</div>
-            <div class="filterDiv fruits">Lemon</div>
-            <div class="filterDiv animals">Cow</div>
-          </div>
-    </section>
+    <!-- Other content goes here -->
 
-
-    
+    <script src="portfolio.js"></script>
 </body>
-<script src="portfolio.js"></script>
 </html>
+    
