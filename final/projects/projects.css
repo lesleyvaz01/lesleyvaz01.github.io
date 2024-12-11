@@ -59,14 +59,22 @@ nav ul li a:hover {
 
 
 /* this is for the little filters */
-#filters {
-    display: flex;
-    justify-content: center;
+.filters .filter {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #92374D;
+    color: #F3f6f4;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#filters filter{
-    margin: 10px;
-}
+.filters .filter:hover {
+    background-color: #F3f6f4;
+    color: #92374D;}
 
 
 #portfolio {
