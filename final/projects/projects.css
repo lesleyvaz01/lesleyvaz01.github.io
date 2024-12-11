@@ -39,28 +39,33 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
+#projects{
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 20vw
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #F3F6F4;
+    margin-top: 10px;
+    padding: 15px 20px;
+}
+
+.project img{
+    width: 10vw
+}
+
+
 /* this is for the little filters */
-.filters {
-    text-align: center;
-    margin: 40px 0;
+#filters {
+    display: flex;
+    justify-content: center;
 }
 
-.filters .filter {
-    display: inline-block;
-    padding: 12px 24px;
+#filters filter{
     margin: 10px;
-    background-color: #92374D;
-    color: #F3f6f4;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.filters .filter:hover {
-    background-color: #F3f6f4;
-    color: #92374D;
 }
 
 
@@ -166,7 +171,7 @@ nav ul li a:hover {
     border-bottom: 3px solid #92374D;
 }
 
-
+/* Responsive Design */
 @media (max-width: 1200px) {
     nav ul {
         flex-direction: column;

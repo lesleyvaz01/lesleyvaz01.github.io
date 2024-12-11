@@ -1,22 +1,23 @@
 {
     "projects": [
         {
+            
             "name": "Colorado Symphony Website",
-            "sub_domain": "symphony_mockup",
-            "category": ["web", "design"],
+            "subdomain": "symphony_mockup",
+            "category": ["web", "ui"],
             "subtitle": "Designing a website for the Colorado Symphony using CSS and HTML from scratch",
             "description": "Worked and collaborated with a group to produce the Colorado Symphony website from scratch. I focused on the FAQ, Contact, and About pages. Which can be found here for the <a href='https://nicklank.github.io/web-css-midterm/about/about.html'>Colorado Symphony</a>.",
-            "mainimg": "symphony.png",
+            "mainimg": "symphony (1).png",
             "imgcarousel": [
-                "symphony1.png",
-                "symphony2.png",
-                "symphony3.png"
+                ["symphony (2).png", "symphony website contact page",
+                "symphony (3).png", "symphony website about page",
+                "symphony (4).png", "more of symphony page"]
             ]
         },
         {
             "name": "Monument for CU Boulder",
-            "sub_domain": "monument_mockup",
-            "category": ["3d", "design", "architecture"],
+            "subdomain": "monument_mockup",
+            "category": ["3d", "Design", "architecture"],
             "subtitle": "Created a monument for CU Boulder using 3D rendering",
             "description": "The monument is meant to be a shared space for students to occupy. Primarily for socialization but when empty could also be used for meditation.",
             "mainimg": "monument.png",
@@ -28,8 +29,8 @@
         },
         {
             "name": "User Guide Flyer",
-            "sub_domain": "flyer_guide",
-            "category": ["photoshop", "design"],
+            "subdomain": "flyer_guide",
+            "category": ["photoshop", "Design"],
             "subtitle": "Created a flyer for nail clippers using adobe photoshop",
             "description": "Professionally shot photos and designed the flyer by hand.",
             "mainimg": "flyer.png",
