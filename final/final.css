@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Quattrocento Sans', sans-serif;
-  background-color: #fdefed; /* Soft background */
-  color: #351d1c; /* Dark brown for readability */
+  background-color: #fdefed; 
+  color: #351d1c; 
   line-height: 1.6;
 }
 
@@ -16,7 +16,7 @@ a {
   color: inherit;
 }
 
-/* Navigation Bar */
+/* nav bar */
 nav {
   background-color: #351d1c; 
   padding: 15px 20px;
@@ -34,7 +34,7 @@ nav ul li a {
   font-family: 'Anton', sans-serif;
   font-weight: bold;
   font-size: 18px;
-  color: #fdefed; /* Light text for contrast */
+  color: #fdefed; 
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -43,10 +43,10 @@ nav ul li a:hover {
   transform: scale(1.1);
 }
 
-/* Landing Section */
+
 #landing {
-  text-align: center;/* position*/
-  padding: 80px 20px;/* position*/
+  text-align: center;
+  padding: 80px 20px;
   background-color: #fbefed; 
 }
 

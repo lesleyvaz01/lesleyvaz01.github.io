@@ -2,69 +2,68 @@
     max-width: 800px;
     margin: 40px auto;
     padding: 30px;
-    background-color: #ffffff; /* Clean white background */
-    border-radius: 12px; /* Soft rounded corners */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
     font-family: 'Quattrocento Sans', sans-serif;
 }
 
-/* Form Heading */
+/*  Headingfo form */
 .contact-container h2 {
     font-size: 2rem;
-    color: #92374d; /* Soft pinkish color */
+    color: #92374d;
     text-align: center;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-/* Input Fields */
+/* this is where yoy tyoe input */
 .contact-container input, 
 .contact-container textarea {
     width: 100%;
     padding: 15px;
     margin: 10px 0;
-    border: 2px solid #ddd; /* Light gray border */
-    border-radius: 8px; /* Rounded input fields */
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
     font-size: 1rem;
     font-family: 'Quattrocento Sans', sans-serif;
-    background-color: #fbefed; /* Subtle background color */
-    transition: border-color 0.3s ease; /* Smooth border transition */
+    background-color: #fbefed; 
+    transition: border-color 0.3s ease; 
 }
 
-/* Input Fields on Focus */
+
 .contact-container input:focus, 
 .contact-container textarea:focus {
-    border-color: #92374d; /* Focused border color */
+    border-color: #92374d; 
     outline: none;
-    box-shadow: 0 0 10px rgba(146, 55, 77, 0.2); /* Light glow effect */
+    box-shadow: 0 0 10px rgba(146, 55, 77, 0.2); 
 }
 
 /* Submit Button */
 .contact-container button {
     width: 100%;
     padding: 15px;
-    background-color: #92374d; /* Deep burgundy color */
-    color: #ffffff; /* White text */
+    background-color: #92374d;
+    color: #ffffff; 
     font-size: 1.2rem;
     border: none;
-    border-radius: 8px; /* Rounded button */
+    border-radius: 8px; 
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Submit Button Hover */
+
 .contact-container button:hover {
-    background-color: #6A3937; /* Darker shade on hover */
-    transform: translateY(-2px); /* Slight lift on hover */
-}
+    background-color: #6A3937; 
+    transform: translateY(-2px); }
 
-/* Submit Button Active */
+
 .contact-container button:active {
-    background-color: #92374d; /* Return to original color */
-    transform: translateY(1px); /* Button "pressing" effect */
+    background-color: #92374d; 
+    transform: translateY(1px);
 }
 
-/* Success or Error Message */
+
 .contact-container .message {
     text-align: center;
     margin-top: 20px;
@@ -73,14 +72,14 @@
     border-radius: 8px;
 }
 
-/* Success Message */
+
 .contact-container .message.success {
-    background-color: #d4edda; /* Light green */
-    color: #155724; /* Dark green */
+    background-color: #d4edda; 
+    color: #155724; 
 }
 
 /* Error Message */
 .contact-container .message.error {
-    background-color: #f8d7da; /* Light red */
-    color: #721c24; /* Dark red */
+    background-color: #f8d7da; 
+    color: #721c24; 
 }

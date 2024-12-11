@@ -7,14 +7,14 @@
 
 body {
     font-family: 'Lucida Sans';
-    background-color: #FDEFED; /* Light background */
-    color: #3b2d2a; /* Dark text for contrast */
+    background-color: #FDEFED; 
+    color: #3b2d2a; 
     line-height: 1.6;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #3b2d2a; /* Darker brown for the navbar */
+    background-color: #3b2d2a; 
     padding: 20px 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -31,7 +31,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #f8f1f1; /* Light color for the links */
+    color: #f8f1f1; 
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -39,26 +39,26 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #fbefed; /* Soft pink on hover */
+    color: #fbefed; 
     transform: scale(1.1);
 }
 
 /* About Section Styling */
 #about {
-    padding: 100px 20px; /* Top padding for better spacing */
-    background-color: #3b2d2a; /* Dark background for contrast */
+    padding: 100px 20px; 
+    background-color: #3b2d2a; 
 }
 
 .about-content {
     max-width: 950px;
     margin: 0 auto;
     padding: 40px;
-    background-color: #fbefed; /* White background to make text pop */
+    background-color: #fbefed; 
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
     text-align: center;
     transform: translateY(20px);
-    animation: fadeInUp 0.6s ease-out forwards; /* Animation for smooth reveal */
+    animation: fadeInUp 0.6s ease-out forwards;
 }
 
 @keyframes fadeInUp {
@@ -75,31 +75,31 @@ nav ul li a:hover {
 #about h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 4rem;
-    color: #92374d; /* Rich brown for the heading */
+    color: #92374d; 
     margin-bottom: 25px;
     letter-spacing: -1px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Soft text shadow for depth */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); 
 }
 
 #about p {
     font-family: 'Inter', sans-serif;
     font-size: 1.2rem;
-    color: #3b2d2a; /* Dark text color */
+    color: #3b2d2a; 
     line-height: 1.8;
     margin-bottom: 25px;
     font-weight: 400;
-    max-width: 750px; /* Restrict paragraph width for better readability */
+    max-width: 750px; 
     margin-left: auto;
     margin-right: auto;
-    text-align: justify; /* Better text alignment for readability */
+    text-align: justify; 
 }
 
-/* Alternating Background Styling for the About Section */
+
 #about:nth-child(even) {
-    background-color: #FDEFED; /* Light gray background */
+    background-color: #FDEFED; 
 }
 
 #about:nth-child(odd) {
-    background-color: #FDEFED; /* Slightly lighter background for contrast */
+    background-color: #FDEFED; 
 }

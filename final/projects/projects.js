@@ -100,11 +100,11 @@ function parseData(data) {//this is basically the information
         projectDiv.classList.add("tile", "all", ...project.category); 
 
        
-        //fi
+        //images delxared again
         projectDiv.innerHTML = `
             <div class="carousel-container">
                 <div class="carousel-slide active">
-                    <img src="images/${project.mainimg}" alt="${project.name}" />
+                    <img src="images/${project.mainimg}" alt="${project.name}" 
                 </div>
                 ${createCarousel(project.imgcarousel)} <!-- Insert carousel images -->
             </div>
